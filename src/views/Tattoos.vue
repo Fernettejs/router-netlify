@@ -72,8 +72,8 @@
   
   /* Create two equal columns that sits next to each other */
   .column {
-    -ms-flex: 50%; /* IE 10 */
-    flex: 50%;
+    -ms-flex: 25%; /* IE 10 */
+    flex: 25%;
     padding: 0 4px;
   }
   

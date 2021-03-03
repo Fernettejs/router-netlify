@@ -12,6 +12,7 @@
 </template> 
 
 <script>
+import { TimelineLite } from "gsap/all";
 import Header from "../components/Header.vue";
 import Banner from "../components/Banner.vue";
 import About from "../components/About.vue";
@@ -25,6 +26,13 @@ import Footer from "../components/Footer.vue";
 // })
 
 export default {
+  mounted() { 
+    const { logo } = this.$refs
+    const timeline = new TimelineLite()
+    
+    timeline
+    .from(logo, {duration: 2, y: '-100%', ease: 'bounce'})
+  },
   name: "App",
   components: {
     Header,

@@ -13,17 +13,20 @@
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/berger-front.png" style="width:100%"></a>
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/berger.png" style="width:100%"></a>
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/canoe.png" style="width:100%"></a>
+                <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/usmc-tank.png" style="width:100%"></a>
+
+                </div>
+                <div class="column">
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/eagle-bike.png" style="width:100%"></a>
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/helo-bike.png" style="width:100%"></a>
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/iwo-jima-bike.png" style="width:100%"></a>
-                <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/mattis-side.png" style="width:100%"></a>
+                <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/nvg-bike.png" style="width:100%"></a>
                 </div>
                 <div class="column">
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/mattis-full.png" style="width:100%"></a>
+                <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/mattis-side.png" style="width:100%"></a>
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/memorial-rear.png" style="width:100%"></a>
-                <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/nvg-bike.png" style="width:100%"></a>
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/swords.png" style="width:100%"></a>
-                <a class="column col-xs-6" id="grayscale"><img src="../assets/images/airbrush/usmc-tank.png" style="width:100%"></a>
                 </div>
             </div>
         </section>
@@ -54,8 +57,8 @@
   
   /* Create two equal columns that sits next to each other */
   .column {
-    -ms-flex: 50%; /* IE 10 */
-    flex: 50%;
+    -ms-flex: 30%; /* IE 10 */
+    flex: 30%;
     padding: 0 4px;
   }
   

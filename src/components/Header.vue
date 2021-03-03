@@ -27,7 +27,7 @@
           <router-link to="/canvas">Canvas</router-link>
         </div>
       </a>
-      <a href="#contact" onclick="toggleMenu();" class="btn nav-link">Contact</a>
+      <a href="#contact" v-on:click="toggleMenu();" class="btn nav-link">Contact</a>
 
     </div>
 
@@ -199,7 +199,34 @@
   .subnavbtn {
     font-size: 20px
   }
+  .btn .nav-link{
+    width: 60px;
+  }
 
+.toggle{
+        width: 40px;
+        height: 40px;
+        background: url(../assets/images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background: url(../assets/images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    header .toggle{
+        filter: invert(1)
+    }
+    header.sticky .toggle{
+        filter: invert(0)
+    }
 }
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 600px) {
@@ -207,7 +234,6 @@
     float: none;
     display: block;
   }
-
 
   .topnav-centered a {
     position: relative;
@@ -259,7 +285,12 @@ color: #fff;
 
 <script>
 import { TimelineLite } from 'gsap'
+import { gsap } from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin);
+
 export default { 
+  methods: {
   mounted() { 
     const { logo } = this.$refs
     const timeline = new TimelineLite() 
@@ -267,13 +298,13 @@ export default {
     timeline
     .from(logo, {duration: 2, y: '-100%', ease: 'bounce'})
   },
-//   toggleMenu(){
-//     var menuToggle = document.querySelector('.toggle');
-//     var menu = document.querySelector('.menu');
-//     menuToggle.classList.toggle('active')
-//     menu.classList.toggle('active')
-// }
-} 
+  toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var menu = document.querySelector('.menu');
+    menuToggle.classList.toggle('active')
+    menu.classList.toggle('active')
+}
+} }
 
 // import gsap from 'gsap'
 
