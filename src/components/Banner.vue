@@ -10,12 +10,12 @@
 .banner {
     position: relative;
     min-height: 100vh;
-    /* background:  */
+    background: 
     /* top, transparent red, faked with gradient */ 
-    /* linear-gradient(
+    linear-gradient(
       rgba(0, 0, 0, 0.60), 
       rgba(0, 0, 0, 0.60)
-    ), url(../assets/images/banner.jpg); */
+    ), url(../assets/images/banner.png);
     background-size: cover;
     background-position: center;
     justify-content: space-between;
@@ -53,7 +53,7 @@
 }
 
 .btn{
-    /* background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../assets/images/American-flag-2a.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../assets/images/American-flag-2a.png);
     position: relative;
     display: inline-block;
     color: #fff;
@@ -73,13 +73,13 @@
 </style>
 
 <script>
-// import { TimelineLite } from 'gsap'
-// export default { 
-//   mounted() { 
-//     const { btn } = this.$refs
-//     const timeline = new TimelineLite() 
+import { TimelineLite } from 'gsap'
+export default { 
+  mounted() { 
+    const { btn } = this.$refs
+    const timeline = new TimelineLite() 
     
-//     timeline.from(btn, {duration: 2, x: '-500%', ease: 'bounce', delay: 2})
-//   }
-// } 
+    timeline.from(btn, {duration: 2, x: '-500%', ease: 'bounce', delay: 2})
+  }
+} 
 </script>

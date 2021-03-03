@@ -5,7 +5,7 @@
     <!-- Centered link -->
     <div class="topnav-centered">
       <a href="#home">
-        <!-- <img ref="logo" class="logo" src="../assets/images/logo-white.png" alt="logo"> -->
+        <img ref="logo" class="logo" src="../assets/images/logo-white.png" alt="logo">
       </a>
     </div>
 
@@ -65,7 +65,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
   position: relative;
-  /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.png);
   background-size: cover;
   overflow: hidden;
   height: 160px;
@@ -267,12 +267,12 @@ export default {
     timeline
     .from(logo, {duration: 2, y: '-100%', ease: 'bounce'})
   },
-  toggleMenu(){
-    var menuToggle = document.querySelector('.toggle');
-    var menu = document.querySelector('.menu');
-    menuToggle.classList.toggle('active')
-    menu.classList.toggle('active')
-}
+//   toggleMenu(){
+//     var menuToggle = document.querySelector('.toggle');
+//     var menu = document.querySelector('.menu');
+//     menuToggle.classList.toggle('active')
+//     menu.classList.toggle('active')
+// }
 } 
 
 // import gsap from 'gsap'

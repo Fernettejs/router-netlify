@@ -4,7 +4,7 @@
             <h2>Services</h2>
             <h3>This is what I do.</h3>
         </div>
-        <!-- <div class="content">
+        <div class="content">
             <div ref="card" class="servicesBox">
                 <router-link to="/airbrush">
                     <img src="../assets/images/airbrush/iwo-jima-bike.png" alt="">
@@ -13,7 +13,7 @@
             </div>
             <div ref="card" class="servicesBox">
                 <router-link to="/tattoos">
-                    <img src="../assets/images/bandana.jpg" alt="">
+                    <img src="../assets/images/bandana.png" alt="">
                 </router-link>
                 <h2>Tattoos</h2>
             </div>
@@ -29,13 +29,13 @@
                 </router-link>
                 <h2>Canvas Paintings</h2>
             </div>
-        </div> -->
+        </div>
     </section>
 </template>
 
 <style scoped>
 .services {
-    /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.png);
     background-size: cover;
 }
 
@@ -116,13 +116,13 @@ img{
 </style>
 
 <script>
-// import { TimelineLite } from 'gsap'
-// export default { 
-//   mounted() { 
-//     const timeline = new TimelineLite() 
+import { TimelineLite } from 'gsap'
+export default { 
+  mounted() { 
+    const timeline = new TimelineLite() 
     
-//     timeline
-//         .from('.servicesBox', {duration: 1, opacity: 0, delay: 2, stagger: .5})
-//   }
-// } 
+    timeline
+        .from('.servicesBox', {duration: 1, opacity: 0, delay: 2, stagger: .5})
+  }
+} 
 </script>

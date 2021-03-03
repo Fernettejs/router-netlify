@@ -2,7 +2,7 @@
     <section class="about" id="about">
         <div class="content">
             <div class="w50">
-                <!-- <img src="../assets/images/the-artist.png" class="img" alt=""> -->
+                <img src="../assets/images/the-artist.png" class="img" alt="">
             </div>
             <div class="contentBox">
                 <div class="heading">
@@ -15,14 +15,14 @@
         <section class="social" id="social">
             <div class="content">
                 <div class="social-box" id="youtube-box">
-                    <!-- <a href="https://www.youtube.com/channel/UCsp7n4jSu-uMAbMqL-QHJ9A" target="_blank">
+                    <a href="https://www.youtube.com/channel/UCsp7n4jSu-uMAbMqL-QHJ9A" target="_blank">
                         <img src="../assets/images/youtube-icon.png" alt="">
-                    </a> -->
+                    </a>
                 </div>
                 <div class="social-box" id="ig-box">
-                    <!-- <a href="https://www.instagram.com/devildog_inkandpaintllc/" target="_blank">
+                    <a href="https://www.instagram.com/devildog_inkandpaintllc/" target="_blank">
                         <img src="../assets/images/ig-icon.png" alt="">
-                    </a> -->
+                    </a>
                 </div>
             </div>
         </section>
