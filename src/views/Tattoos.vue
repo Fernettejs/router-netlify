@@ -5,9 +5,6 @@
         <!-- Header -->
         <div class="header" id="myHeader">
             <h1>Tattoos</h1>
-            <p>Click on the buttons to change the grid view.</p>
-            <button class="btn" onclick="two()">2</button>
-            <button class="btn" onclick="four()">4</button>
         </div>
 
         <!-- Photo Grid -->
@@ -62,6 +59,9 @@
     text-align: center;
     padding: 32px;
 }
+.header h1 {
+  background: var(--primary-color);
+  }
 .row {
     display: -ms-flexbox; /* IE 10 */
     display: flex;
