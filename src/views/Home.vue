@@ -1,18 +1,38 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header />
+    <Banner />
+    <About />
+    <Services />
+    <Contact />
+    <Footer />
+
+    <router-view />
   </div>
-</template>
+</template> 
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Header from "../components/Header.vue";
+import Banner from "../components/Banner.vue";
+import About from "../components/About.vue";
+import Services from "../components/Services.vue";
+import Contact from "../components/Contact.vue";
+import Footer from "../components/Footer.vue";
+// import Tawk from 'vue-echo'
+  
+// Vue.use(Tawk, {
+//     tawkSrc: 'https://embed.tawk.to/6038be47385de407571a4c78/1eveqehid'
+// })
 
 export default {
-  name: 'Home',
+  name: "App",
   components: {
-    HelloWorld
+    Header,
+    Banner,
+    About,
+    Services,
+    Contact,
+    Footer,
   }
-}
+};
 </script>
