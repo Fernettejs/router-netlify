@@ -21,7 +21,7 @@ import Contact from "../components/Contact.vue";
 import Footer from "../components/Footer.vue";
 // import Tawk from 'vue-echo'
   
-// Vue.use(Tawk, {
+// Vue.use(Tawk, { 
 //     tawkSrc: 'https://embed.tawk.to/6038be47385de407571a4c78/1eveqehid'
 // })
 

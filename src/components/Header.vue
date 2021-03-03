@@ -284,27 +284,37 @@ color: #fff;
 </style>
 
 <script>
-import { TimelineLite } from 'gsap'
-import { gsap } from 'gsap';
-import { CSSPlugin } from 'gsap/CSSPlugin'
-gsap.registerPlugin(CSSPlugin);
 
+import { TimelineLite } from 'gsap'
 export default { 
-  methods: {
   mounted() { 
-    const { logo } = this.$refs
+    const { btn } = this.$refs
     const timeline = new TimelineLite() 
     
-    timeline
-    .from(logo, {duration: 2, y: '-100%', ease: 'bounce'})
-  },
-  toggleMenu(){
-    var menuToggle = document.querySelector('.toggle');
-    var menu = document.querySelector('.menu');
-    menuToggle.classList.toggle('active')
-    menu.classList.toggle('active')
-}
-} }
+    timeline.from(btn, {duration: 2, x: '-500%', ease: 'bounce', delay: 2})
+  }
+} 
+// import { TimelineLite } from 'gsap'
+// import { gsap } from 'gsap';
+// import { CSSPlugin } from 'gsap/CSSPlugin'
+// gsap.registerPlugin(CSSPlugin);
+
+// export default { 
+//   methods: {
+//   mounted() { 
+//     const { logo } = this.$refs
+//     const timeline = new TimelineLite() 
+    
+//     timeline
+//     .from(logo, {duration: 2, y: '-100%', ease: 'bounce'})
+//   },
+//   toggleMenu(){
+//     var menuToggle = document.querySelector('.toggle');
+//     var menu = document.querySelector('.menu');
+//     menuToggle.classList.toggle('active')
+//     menu.classList.toggle('active')
+// }
+// } }
 
 // import gsap from 'gsap'
 
