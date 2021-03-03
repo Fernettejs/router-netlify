@@ -87,7 +87,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../assets/images/American-flag-2a.png);
-}png
+}
 .contactInfo{
     min-width: 40%;
 }
