@@ -12,9 +12,9 @@
 
             <!-- Photo Grid -->
             <div class="row"> 
-                <!-- <div class="column">
+                <div class="column">
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/canvas/ied.png" style="width:100%"></a>
-                </div> -->
+                </div>
             </div>
         </section>
     </div>

@@ -12,11 +12,11 @@
 
             <!-- Photo Grid -->
             <div class="row"> 
-                <!-- <div class="column">
+                <div class="column">
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/murals/afghan.png" style="width:100%"></a>
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/murals/nam.png" style="width:100%"></a>
                 <a class="column col-xs-6" id="grayscale"><img src="../assets/images/murals/ww1.png" style="width:100%"></a>
-                </div> -->
+                </div>
             </div>
         </section>
     </div>

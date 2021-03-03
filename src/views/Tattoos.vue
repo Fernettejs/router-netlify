@@ -12,40 +12,40 @@
 
         <!-- Photo Grid -->
         <div class="row"> 
-            <!-- <div class="column">
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/rifle-memorial.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/born-to-kill.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/iwo-jima.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/flag-in-arm.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/gunners-mate.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/knight.jpg" style="width:100%"></a>
+            <div class="column">
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/rifle-memorial.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/born-to-kill.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/iwo-jima.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/flag-in-arm.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/gunners-mate.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/knight.png" style="width:100%"></a>
             </div>  
             <div class="column">
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/birds.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/deer.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/mask.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/samurai.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/star.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/tree.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/inside-arm.jpg" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/birds.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/deer.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/mask.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/samurai.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/star.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/tree.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/inside-arm.png" style="width:100%"></a>
             </div>
             <div class="column">
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/lipstick.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/gears-in-arm.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/m4.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/mom-tattoo.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/jiu-jitsu.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/temple.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/grapes.jpg" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/lipstick.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/gears-in-arm.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/m4.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/mom-tattoo.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/jiu-jitsu.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/temple.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/grapes.png" style="width:100%"></a>
             </div>
             <div class="column">
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/dead.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/map.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/eagle.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/graves.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/dont-tread-on-me.jpg" style="width:100%"></a>
-            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/scroll.jpg" style="width:100%"></a>
-            </div> -->
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/dead.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/map.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/eagle.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/graves.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/dont-tread-on-me.png" style="width:100%"></a>
+            <a class="column col-xs-6" id="grayscale"><img src="../assets/images/scroll.png" style="width:100%"></a>
+            </div>
         </div>
     </section>
   </div>
