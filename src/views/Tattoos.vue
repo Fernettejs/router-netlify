@@ -115,6 +115,16 @@
   background: var(--blue-color);
 
 }
+@media (max-width: 991px){
+  .column {
+    -ms-flex: 33%; /* IE 10 */
+    flex: 33%;
+    padding: 0 4px;
+  }
+  .tattoos h1 {
+    font-size: 42px;
+  }
+}
 </style>
 
 <script>

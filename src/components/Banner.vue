@@ -15,10 +15,11 @@
     background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgba(0, 0, 0, 0.60), 
-      rgba(0, 0, 0, 0.60)
+      rgba(0, 0, 0, 0.40), 
+      rgba(0, 0, 0, 0.40)
     ), url(../assets/images/banner.png);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +44,8 @@
     color: #fff;
     font-weight: 500;
     line-height: 1.2em;
-    margin-top: 10px;
+    text-shadow: 2px 2px 2px #000;
+    margin-top: 240px;
 }
 
 .banner h4 {
@@ -77,10 +79,15 @@ section{
 }
 .banner{
     padding: 150px 50px 100px;
+    background-size: cover;
 }
 .banner-text {
     position: relative;;
     top: 20px;
+}
+.banner h1 {
+    margin-top: -80px;
+    font-size: 42px;
 }
 .banner h2{
     font-size: 1.5em;

@@ -98,7 +98,11 @@
 .tattoos{
   background: var(--blue-color);
 }
-
+@media (max-width: 991px){
+  .tattoos h1 {
+    font-size: 42px;
+  }
+}
 </style>
 
 <script>

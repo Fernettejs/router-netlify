@@ -68,7 +68,7 @@
         top: 50%;
         right: 6px;
         left: 6px;
-        height: 2px;
+        height: 3px;
         width: auto;
         margin-top: -1px;
         transition: transform .6s cubic-bezier(.165,.84,.44,1),opacity .3s cubic-bezier(.165,.84,.44,1),background-color .6s cubic-bezier(.165,.84,.44,1);

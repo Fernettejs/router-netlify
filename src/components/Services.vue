@@ -37,6 +37,7 @@
 .services {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.png);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 img{

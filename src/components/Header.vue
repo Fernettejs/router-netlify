@@ -110,6 +110,9 @@
   color: black;
   border-radius: 10px;
 }
+.topnav-centered a:hover {
+  background: none;
+}
 
 /* Add a color to the active/current link */
 /* .topnav a.active {
@@ -125,13 +128,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 14px;
   display: block;
+  top: 36px;
 }
 
 .logo {
   width: 120px;
-  margin-bottom: 10px;
 }
 
 /* Right-aligned section inside the top navigation */
@@ -159,7 +161,7 @@
   margin: 0 20px;
   background-color: inherit;
   font-family: inherit;
-    display: block;
+  display: block;
 
 }
 
@@ -222,23 +224,23 @@
 
 @media (max-width: 991px){
 .topnav-centered {
-  float: none;
-  position: absolute;
-  right: 50%;
-  margin-top: 20px;
-  display: block;
-  }
+float: none;
+position: absolute;
+right: 30%;
+margin-top: -20px;
+display: block;
+}
 .topnav a {
 font-size: 20px;
 }
 
 .subnav:hover a {
   font-size: 20px;
+  width: 160px;
 }
 .subnavbtn {
   font-size: 20px
 }
-
 .menu{
   position: fixed;
   top: 75px;

@@ -10,6 +10,7 @@
 section {
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.png);
   background-size: cover;
+  height: 50px;
 }
 
 .copyright{

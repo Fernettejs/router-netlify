@@ -27,10 +27,6 @@
     --gray-color:#CECECE;
 }
 
-section {
-    padding: 100px;
-}
-
 h2 {
     font-size: 3em;
     color: white;

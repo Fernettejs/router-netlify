@@ -56,6 +56,5 @@
         height: 100vh;
         z-index: 999;
         padding: 3rem 20px 2rem 20px;
-        width: 300px;
     }
 </style>

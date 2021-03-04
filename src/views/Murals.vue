@@ -45,8 +45,8 @@
   
   /* Create two equal columns that sits next to each other */
   .column {
-    -ms-flex: 50%; /* IE 10 */
-    flex: 50%;
+    -ms-flex: 90%; /* IE 10 */
+    flex: 90%;
     padding: 0 4px;
   }
   
@@ -85,7 +85,12 @@
 
 .tattoos{
   background: var(--blue-color);
+}
 
+@media (max-width: 991px){
+  .tattoos h1 {
+    font-size: 42px;
+  }
 }
 </style>
 
