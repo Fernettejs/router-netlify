@@ -107,7 +107,7 @@ section{
 
 <script>
 import { TimelineLite } from 'gsap'
-export default { 
+export default {
   mounted() { 
     const { btn } = this.$refs
     const timeline = new TimelineLite() 

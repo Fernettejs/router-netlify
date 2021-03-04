@@ -8,8 +8,23 @@
         <img ref="logo" class="logo" src="../assets/images/logo-white.png" alt="logo">
       </a>
     </div>
+<Sidebar>
+     <ul class="sidebar-panel-nav">
+       <li><a class="nav-link" href="#home">Home</a></li>
+       <li><a class="nav-link" href="#about">About</a></li>
+       <li><a class="nav-link" href="#contact">Contact</a></li>
+       <li><a class="subnav">
+          <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <router-link to="/airbrush">Airbrush</router-link>
+            <router-link to="/tattoos">Tattoos</router-link>
+            <router-link to="/murals">Murals</router-link>
+            <router-link to="/canvas">Canvas</router-link>
+          </div>
+        </a></li>
+     </ul>
+</Sidebar>
 
-  <div class="toggle" v-on:click="toggleMenu();"></div>
     <div class="menu">
 
       <!-- Left-aligned links (default) -->
@@ -23,15 +38,17 @@
         <a class="subnav">
           <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
           <div class="subnav-content">
-            <router-link to="/airbrush" v-on:click="toggleMenu();">Airbrush</router-link>
-            <router-link to="/tattoos" v-on:click="toggleMenu();">Tattoos</router-link>
-            <router-link to="/murals" v-on:click="toggleMenu();">Murals</router-link>
-            <router-link to="/canvas" v-on:click="toggleMenu();">Canvas</router-link>
+            <router-link to="/airbrush">Airbrush</router-link>
+            <router-link to="/tattoos">Tattoos</router-link>
+            <router-link to="/murals">Murals</router-link>
+            <router-link to="/canvas">Canvas</router-link>
           </div>
         </a>
         <a href="#contact" v-on:click="toggleMenu();" class="btn nav-link">Contact</a>
       </div>
     </div>
+    <Burger />
+
 
     <!-- <header>
         <div class="toggle" @click="toggleMenu();"></div>
@@ -55,6 +72,7 @@
           </ul>
     </header> -->
   </div>
+  
 </template>
 
 <style scoped>
@@ -180,6 +198,17 @@
 .subnav:hover a {
   font-size: 18px;
 }
+ ul.sidebar-panel-nav {
+   list-style-type: none;
+ }
+
+ ul.sidebar-panel-nav > li > a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.5rem;
+   display: block;
+   padding-bottom: 0.5em;
+ }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 
@@ -327,12 +356,19 @@ color: #fff;
 </style>
 
 <script>
+import Burger from './Burger.vue';
+import Sidebar from './Sidebar.vue';
 import { TimelineLite } from 'gsap'
 import { gsap } from 'gsap';
 import { CSSPlugin } from 'gsap/CSSPlugin'
 gsap.registerPlugin(CSSPlugin);
 
 export default { 
+  name: 'app',
+  components: {
+      Burger,
+      Sidebar
+  },
   mounted() { 
     const { logo } = this.$refs
     const timeline = new TimelineLite() 
