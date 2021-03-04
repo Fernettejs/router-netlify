@@ -9,32 +9,29 @@
       </a>
     </div>
 
-    <!-- Left-aligned links (default) -->
-    <div class="topnav-left">
-      <a class="nav-link" href="#home">Home</a>
-      <a class="nav-link" href="#about">About</a>
+  <div class="toggle" v-on:click="toggleMenu();"></div>
+    <div class="menu">
 
+      <!-- Left-aligned links (default) -->
+      <div class="topnav-left">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+      </div>
+
+      <!-- Right-aligned links -->
+      <div class="topnav-right">
+        <a class="subnav">
+          <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <router-link to="/airbrush" v-on:click="toggleMenu();">Airbrush</router-link>
+            <router-link to="/tattoos" v-on:click="toggleMenu();">Tattoos</router-link>
+            <router-link to="/murals" v-on:click="toggleMenu();">Murals</router-link>
+            <router-link to="/canvas" v-on:click="toggleMenu();">Canvas</router-link>
+          </div>
+        </a>
+        <a href="#contact" v-on:click="toggleMenu();" class="btn nav-link">Contact</a>
+      </div>
     </div>
-
-    <!-- Right-aligned links -->
-    <div class="topnav-right">
-      <a class="subnav">
-        <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
-        <div class="subnav-content">
-          <router-link to="/airbrush">Airbrush</router-link>
-          <router-link to="/tattoos">Tattoos</router-link>
-          <router-link to="/murals">Murals</router-link>
-          <router-link to="/canvas">Canvas</router-link>
-        </div>
-      </a>
-      <a href="#contact" v-on:click="toggleMenu();" class="btn nav-link">Contact</a>
-
-    </div>
-
-
-
-
-
 
     <!-- <header>
         <div class="toggle" @click="toggleMenu();"></div>
@@ -127,69 +124,75 @@
 /* The navigation menu */
   /* Navigation links */
   
-  /* The subnavigation menu */
-  .subnav {
-    float: left;
-  }
-  
-  /* Subnav button */
-  .subnav .subnavbtn {
-    border: none;
-    outline: none;
-    color: white;
-    margin: 0 20px;
-    background-color: inherit;
-    font-family: inherit;
-  }
-  
-  /* Add a red background color to navigation links on hover */
-  .header a:hover, .subnav:hover .subnavbtn {
-    background: var(--primary-color);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 5px;
-  }
-  
-  /* Style the subnav content - positioned absolute */
-  .subnav-content {
-    display: none;
-    position: absolute;
-    background: var(--primary-color);
-    border-radius: 5px;
-    z-index: 1;
-  }
-  
-  /* Style the subnav links */
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-    margin: 4px;
-  }
-  
-  /* Add a grey background color on hover */
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  /* When you move the mouse over the subnav container, open the subnav content */
-  .subnav:hover .subnav-content {
-    display: block;
-  }
-  .subnavbtn {
-    font-size: 32px;
-  }
-  .subnav:hover a {
-    font-size: 18px;
-  }
+/* The subnavigation menu */
+.subnav {
+  float: left;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  border: none;
+  outline: none;
+  color: white;
+  margin: 0 20px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+/* Add a red background color to navigation links on hover */
+.header a:hover, .subnav:hover .subnavbtn {
+  background: var(--primary-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  background: var(--primary-color);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  margin: 4px;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+.subnavbtn {
+  font-size: 32px;
+}
+.subnav:hover a {
+  font-size: 18px;
+}
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 
 @media (max-width: 991px){
-.logo {
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  margin-top: 14px;
+  display: block;
   width: 100px;
-}
+  }
 .topnav a {
 font-size: 20px;
 }
@@ -204,55 +207,58 @@ font-size: 20px;
 }
 header,
 header.sticky{
-    padding: 20px 50px;
-    z-index: 1000;
+  padding: 20px 50px;
+  z-index: 1000;
 }
 .menu{
-    position: fixed;
-    top: 75px;
-    left: -100%;
-    display: block;
-    padding: 100;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    background: white;
-    transition: 0.5s;
-    z-index: 999;
-    border-top: 1px solid rgba(0,0,0,0.2);
+  position: fixed;
+  top: 75px;
+  left: -100%;
+  display: block;
+  padding: 100;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  transition: 0.5s;
+  z-index: 999;
+  border-top: 1px solid rgba(0,0,0,0.2);
 }
 .menu.active{
-    left: 0;
+  left: 0;
 }
 header ul li a{
-    color: #111;
-    font-size: 24px;
-    margin: 10px;
-
+  color: #111;
+  font-size: 24px;
+  margin: 10px;
 }
 .toggle{
-        width: 40px;
-        height: 40px;
-        background: url(../assets/images/menu.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 30px;
-        cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url(../assets/images/menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  cursor: pointer;
+  filter: invert(1);
+  margin-left: 90%;
+  margin-top: 60px;
 }
 .toggle.active{
-    width: 40px;
-    height: 40px;
-    background: url(../assets/images/close.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 25px;
-    cursor: pointer;
+  width: 80px;
+  height: 80px;
+  background: url(../assets/images/close.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  cursor: pointer;
+  filter: invert(1);
 }
 header .toggle{
-    filter: invert(1)
+  filter: invert(1)
 }
 header.sticky .toggle{
-    filter: invert(0)
+  filter: invert(0)
 }
 }
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
@@ -332,13 +338,13 @@ export default {
     const timeline = new TimelineLite() 
     
     timeline.from(logo, {duration: 2, y: '-100%', ease: 'bounce'})
+  },
+  toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var menu = document.querySelector('.menu');
+    menuToggle.classList.toggle('active')
+    menu.classList.toggle('active')
   }
-//   toggleMenu(){
-//     var menuToggle = document.querySelector('.toggle');
-//     var menu = document.querySelector('.menu');
-//     menuToggle.classList.toggle('active')
-//     menu.classList.toggle('active')
-// }
 } 
 
 // import gsap from 'gsap'

@@ -72,3 +72,16 @@ img {
   border-radius: 10px;
 }
 </style>
+
+<script>
+// export default {
+//   methods: {
+//     toggleMenu(){
+//     var menuToggle = document.querySelector('.toggle');
+//     var menu = document.querySelector('.menu');
+//     menuToggle.classList.toggle('active')
+//     menu.classList.toggle('active')
+//     }
+//   }
+// }
+</script>
