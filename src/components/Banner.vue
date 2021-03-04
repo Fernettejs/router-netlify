@@ -22,7 +22,6 @@
     align-items: center;
     text-align: center;
     border-bottom: 3px solid white;
-
 }
 
 .banner:hover {

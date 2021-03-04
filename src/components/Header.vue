@@ -38,10 +38,10 @@
         <a class="subnav">
           <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
           <div class="subnav-content">
-            <router-link to="/airbrush">Airbrush</router-link>
-            <router-link to="/tattoos">Tattoos</router-link>
-            <router-link to="/murals">Murals</router-link>
-            <router-link to="/canvas">Canvas</router-link>
+            <router-link class="sublink" to="/airbrush">Airbrush</router-link>
+            <router-link class="sublink" to="/tattoos">Tattoos</router-link>
+            <router-link class="sublink" to="/murals">Murals</router-link>
+            <router-link class="sublink" to="/canvas">Canvas</router-link>
           </div>
         </a>
         <a href="#contact" v-on:click="toggleMenu();" class="btn nav-link">Contact</a>
@@ -82,10 +82,10 @@
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.png);
   background-size: cover;
-  overflow: hidden;
-  height: 160px;
-  font-size: 32px;
+  height: 100px;
+  font-size: 22px;
   border: 3px solid white;
+  z-index: 999;
 }
 
 .topnav-left {
@@ -101,7 +101,7 @@
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
-  margin-top: 40px;
+  margin-top: 18px;
 }
 
 /* Change the color of links on hover */
@@ -130,7 +130,7 @@
 }
 
 .logo {
-  width: 200px;
+  width: 120px;
   margin-bottom: 10px;
 }
 
@@ -145,6 +145,10 @@
 /* The subnavigation menu */
 .subnav {
   float: left;
+  position: relative;
+  display: block;
+  text-align: center !important;
+
 }
 
 /* Subnav button */
@@ -155,6 +159,8 @@
   margin: 0 20px;
   background-color: inherit;
   font-family: inherit;
+    display: block;
+
 }
 
 /* Add a red background color to navigation links on hover */
@@ -163,6 +169,7 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 5px;
+  display: block;
 }
 
 /* Style the subnav content - positioned absolute */
@@ -171,8 +178,7 @@
   position: absolute;
   background: var(--primary-color);
   border-radius: 5px;
-  z-index: 1;
-}
+  }
 
 /* Style the subnav links */
 .subnav-content a {
@@ -191,12 +197,14 @@
 /* When you move the mouse over the subnav container, open the subnav content */
 .subnav:hover .subnav-content {
   display: block;
+  z-index: 999;
 }
 .subnavbtn {
-  font-size: 32px;
+  font-size: 22px;
 }
 .subnav:hover a {
   font-size: 18px;
+  z-index: 999;
 }
  ul.sidebar-panel-nav {
    list-style-type: none;
@@ -213,32 +221,24 @@
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 
 @media (max-width: 991px){
-.topnav-centered a {
+.topnav-centered {
   float: none;
   position: absolute;
-  top: 50%;
-  left: 10%;
-  margin-top: 14px;
+  right: 50%;
+  margin-top: 20px;
   display: block;
-  width: 100px;
   }
 .topnav a {
 font-size: 20px;
 }
+
 .subnav:hover a {
   font-size: 20px;
 }
 .subnavbtn {
   font-size: 20px
 }
-.btn .nav-link{
-  width: 60px;
-}
-header,
-header.sticky{
-  padding: 20px 50px;
-  z-index: 1000;
-}
+
 .menu{
   position: fixed;
   top: 75px;
@@ -302,17 +302,7 @@ header.sticky .toggle{
   left: 0;
   transform: none;
 }
-    header,
-  header.sticky{
-      padding: 20px 20px;
-      z-index: 1000;
-  }
-  .banner{
-      padding: 150px 20px 100px;
-  }
-  section{
-      padding: 100px 20px;
-  }
+
 }
 
 /* header {
