@@ -1,8 +1,10 @@
 <template>
     <section class="banner center" id="home">
+        <div banner-text>
             <h1>DEVILDOG INK & PAINT llc.</h1>
                 <h4>Custom Art Studio</h4>
                 <a ref="btn" href="#contact" class="btn">Get some shit done</a>
+        </div>
     </section>
 </template>
 
@@ -41,7 +43,7 @@
     color: #fff;
     font-weight: 500;
     line-height: 1.2em;
-    margin-top: 300px;
+    margin-top: 10px;
 }
 
 .banner h4 {
@@ -75,6 +77,10 @@ section{
 }
 .banner{
     padding: 150px 50px 100px;
+}
+.banner-text {
+    position: relative;;
+    top: 20px;
 }
 .banner h2{
     font-size: 1.5em;
