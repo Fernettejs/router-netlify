@@ -134,4 +134,13 @@ p {
     text-shadow: 2px 2px 2px #000;
 }
 
+@media (max-width: 991px){
+    .text a {
+    font-size: 18px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+
+}
+}
+
 </style>
