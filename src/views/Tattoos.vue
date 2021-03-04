@@ -61,6 +61,7 @@
 }
 .header h1 {
   background: var(--primary-color);
+  border-radius: 5px;
   }
 .row {
     display: -ms-flexbox; /* IE 10 */

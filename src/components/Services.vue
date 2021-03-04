@@ -112,7 +112,31 @@ img{
     border: 3px solid white;
     color: white;
 }
+@media (max-width: 991px){
+.services .content .servicesBox img{
+    width: 300px;
+    height: 300px;
+}
+.servicesBox h2 {
+    font-size: 24px !important;
+}
+}
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+.services .content .servicesBox img{
+    width: 180px;
+    height: 80px;
+    object-fit: cover;
 
+}
+.services .content .servicesBox{
+    width: 220px;
+    height: 180px;
+}
+.servicesBox h2 {
+    font-size: 18px !important;
+}
+  }
 </style>
 
 <script>

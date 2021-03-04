@@ -187,22 +187,49 @@
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 
 @media (max-width: 991px){
-  .logo {
-    width: 100px;
-  }
-  .topnav a {
+.logo {
+  width: 100px;
+}
+.topnav a {
+font-size: 20px;
+}
+.subnav:hover a {
   font-size: 20px;
-  }
- .subnav:hover a {
-    font-size: 20px;
-  }
-  .subnavbtn {
-    font-size: 20px
-  }
-  .btn .nav-link{
-    width: 60px;
-  }
+}
+.subnavbtn {
+  font-size: 20px
+}
+.btn .nav-link{
+  width: 60px;
+}
+header,
+header.sticky{
+    padding: 20px 50px;
+    z-index: 1000;
+}
+.menu{
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+.menu.active{
+    left: 0;
+}
+header ul li a{
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
 
+}
 .toggle{
         width: 40px;
         height: 40px;
@@ -211,35 +238,45 @@
         background-repeat: no-repeat;
         background-size: 30px;
         cursor: pointer;
-    }
-    .toggle.active{
-        width: 40px;
-        height: 40px;
-        background: url(../assets/images/close.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 25px;
-        cursor: pointer;
-    }
-    header .toggle{
-        filter: invert(1)
-    }
-    header.sticky .toggle{
-        filter: invert(0)
-    }
+}
+.toggle.active{
+    width: 40px;
+    height: 40px;
+    background: url(../assets/images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+}
+header .toggle{
+    filter: invert(1)
+}
+header.sticky .toggle{
+    filter: invert(0)
+}
 }
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
-    float: none;
-    display: block;
+.topnav a, .topnav-right {
+  float: none;
+  display: block;
+}
+.topnav-centered a {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+    header,
+  header.sticky{
+      padding: 20px 20px;
+      z-index: 1000;
   }
-
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
+  .banner{
+      padding: 150px 20px 100px;
+  }
+  section{
+      padding: 100px 20px;
   }
 }
 

@@ -114,55 +114,26 @@ img{
 
 @media (max-width: 991px){
     
-    section{
-        padding: 100px 50px;
-    }
-    .banner{
-        padding: 150px 50px 100px;
-    }
-    .banner h2{
-        font-size: 1.5em;
-    }
-    .banner h3{
-        font-size: 1em;
-    }
-    .btn{
-        margin: 10px;
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-    .heading h2{
-        font-weight: 600;
-        font-size: 24px;
-    }
-    .contentBox h3{
-        font-size: 20px;
-    }
-    .content{
-        flex-direction: column;
-    }
-    .w50{
-        margin-bottom: 20px;
-    }
-    .services .content .servicesBox{
-        margin: 10px;
-    }
-    .work .content .workBox {
-        width: 100%;
-        padding: 10px;
-    }
-    .testimonials .content .testimonialsBox {
-        max-width: calc(100% - 20px);
-        padding: 40px 20px;
-        margin: 10px;
-        background: rgb(244,198, 137);
-    }
-        .testimonials .content .testimonialsBox h3 {
-            margin-top: 20px;
-    }
-    .contactInfo {
-        margin: 20px 0;
-    }
+section{
+    padding: 100px 50px;
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+.contentBox h3{
+    font-size: 20px;
+}
+.content{
+    flex-direction: column;
+}
+.w50{
+    margin-bottom: 20px;
+}
+.social-box{
+    height: 70px;
+    width: 70px;
+}
 }
 
 @media (max-width:600px){

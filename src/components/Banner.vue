@@ -69,6 +69,39 @@
     border: 5px solid white;
     box-shadow: -6px 6px 25px #888888;
 }
+@media (max-width: 991px){
+
+section{
+    padding: 100px 50px;
+}
+.banner{
+    padding: 150px 50px 100px;
+}
+.banner h2{
+    font-size: 1.5em;
+}
+.banner h3{
+    font-size: 1em;
+}
+.btn{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+.contentBox h3{
+    font-size: 20px;
+}
+.content{
+    flex-direction: column;
+}
+.w50{
+    margin-bottom: 20px;
+}
+}
 
 </style>
 
