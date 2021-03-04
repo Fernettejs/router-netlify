@@ -75,12 +75,8 @@
 @media (max-width: 991px){
 
 section{
-    padding: 100px 50px;
 }
-.banner{
-    padding: 150px 50px 100px;
-    background-size: cover;
-}
+
 .banner-text {
     position: relative;;
     top: 20px;
