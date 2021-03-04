@@ -22,12 +22,12 @@
                         </div>
                         <div class="text">
                             <h3>Email</h3>
-                            <p>Joe@DevilDogInkandPaint.com</p>
+                            <a href="Joe@DevilDogInkandPaint.com">Joe@DevilDogInkandPaint.com</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="formBox">
+            <!-- <div class="formBox">
                 <form action="">
                     <h3>Message Me</h3>
                     <input type="text" name="" placeholder="Full Name">
@@ -35,7 +35,7 @@
                     <textarea placeholder="Your Message"></textarea>
                     <input class="btn" type="submit" value="Send">
                 </form>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>
@@ -58,7 +58,7 @@
 .formBox form h3,
 .contactInfo h3{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -66,7 +66,7 @@
 .formBox form textarea{
     margin-bottom: 20px;
     padding: 15px;
-    font-size: 16px;
+    font-size: 26px;
     background: transparent;
     border: none;
     outline: none;
@@ -125,6 +125,13 @@
 }
 p {
     text-align: left !important;
+    font-size: 32px;
+    text-shadow: 2px 2px 2px #000;
+}
+.text a {
+    color: white;
+    font-size: 32px;
+    text-shadow: 2px 2px 2px #000;
 }
 
 </style>

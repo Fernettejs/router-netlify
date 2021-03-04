@@ -35,7 +35,7 @@
 
 <style scoped>
 .services {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7)), url(../assets/images/American-flag-2a.png);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../assets/images/American-flag-2a.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -58,7 +58,7 @@ img{
     padding: 40px 20px;
     background: #222;
     color: var(--secondary-color);
-    width: 300px;
+    width: 260px;
     margin: 20px;
     text-align: center;
     transition: 0.5s;
@@ -142,7 +142,7 @@ img{
 
 <script>
 import { TimelineLite } from 'gsap'
-export default { 
+export default {
   mounted() { 
     const timeline = new TimelineLite() 
     
