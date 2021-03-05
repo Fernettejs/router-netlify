@@ -73,9 +73,15 @@
     box-shadow: -6px 6px 25px #888888;
 }
 @media (max-width: 991px){
+.banner {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 155px 0;
+    background-size: cover;
+    background-attachment: local;
 
-
-
+}
 .banner-text {
     position: relative;;
     top: 20px;

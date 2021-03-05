@@ -4,7 +4,7 @@
 
     <!-- Centered link -->
     <div class="topnav-centered">
-      <a href="#home">
+      <a href="/">
         <img ref="logo" class="logo" src="../assets/images/logo-white.png" alt="logo">
       </a>
     </div>

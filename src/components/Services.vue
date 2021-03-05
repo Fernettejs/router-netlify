@@ -114,6 +114,10 @@ img{
     color: white;
 }
 @media (max-width: 991px){
+.services {
+    background-attachment: scroll;
+}
+
 .services .content .servicesBox img{
     width: 300px;
     height: 300px;
