@@ -28,7 +28,7 @@
 }
 
 section {
-    padding: 100px;
+    padding: 100px 0;
 }
 
 h2 {

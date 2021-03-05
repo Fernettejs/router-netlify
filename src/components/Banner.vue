@@ -74,8 +74,7 @@
 }
 @media (max-width: 991px){
 
-section{
-}
+
 
 .banner-text {
     position: relative;;
