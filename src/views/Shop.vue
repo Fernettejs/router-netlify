@@ -1,21 +1,25 @@
 <template>
 <div>
   <HeaderAway />
-     <body>
-    <section>
-      <div class="product">
-        <img
-          src="https://i.imgur.com/EHyR2nP.png"
-          alt="The cover of Stubborn Attachments"
-        />
-        <div class="description">
-          <h3>Stubborn Attachments</h3>
-          <h5>$20.00</h5>
-        </div>
-      </div>
-      <button type="button" id="checkout-button">Checkout</button>
-    </section>
-  </body>
+  <img src="../assets/images/white-t-shirt.png" alt="Cool Shirt">
+  <button class="snipcart-add-item"
+  data-item-id="shirt"
+  data-item-price="24.99"
+  data-item-url="src/views/Shop.vue"
+  data-item-description="High-quality shirt."
+  data-item-image="../assets/images/white-t-shirt.png"
+  data-item-name="Cool Shirt">
+  Add to cart
+</button>
+<button class="snipcart-add-item"
+  data-item-id="hat"
+  data-item-price="14.99"
+  data-item-url="src/views/Shop.vue"
+  data-item-description="High-quality hat."
+  data-item-image="../assets/images/murals/afghan.png"
+  data-item-name="Cool Hat">
+  Add to cart
+</button>
   <Footer />
 </div>
 </template>
@@ -61,3 +65,28 @@ export default {
     }
     }}
   </script>
+
+  <style scoped>
+  button {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../assets/images/American-flag-2a.png);
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    margin-top: 40px;
+    padding: 10px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: -6px 6px 25px #888888;
+    left: 0;
+  }
+  img {
+    width: 200px;
+    display: block;
+    }
+  </style>
