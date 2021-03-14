@@ -45,6 +45,7 @@
             </div>
         </div>
     </section>
+    <Footer />
   </div>
 </template>
 
@@ -129,11 +130,13 @@
 
 <script>
 import HeaderAway from "../components/HeaderAway.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
     name: "App",
   components: {
     HeaderAway,
+    Footer
   },
 }
 </script>

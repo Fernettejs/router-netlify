@@ -5,6 +5,13 @@ import Airbrush from "../views/Airbrush.vue";
 import Tattoos from "../views/Tattoos.vue";
 import Murals from "../views/Murals.vue";
 import Canvas from "../views/Canvas.vue";
+import Checkout from "../views/Checkout.vue";
+import Shop from "../views/Shop.vue";
+import Success from "../views/Success.vue";
+import Cancel from "../views/Cancel.vue";
+
+
+
 
 Vue.use(VueRouter);
 
@@ -28,6 +35,26 @@ const routes = [
     path: "/canvas",
     name: "Canvas",
     component: Canvas
+  },
+  {
+    path: "/checkout",
+    name: "Checkout",
+    component: Checkout
+  },
+  {
+    path: "/shop",
+    name: "Shop",
+    component: Shop
+  },
+  {
+    path: "/success",
+    name: "Success",
+    component: Success
+  },
+  {
+    path: "/cancel",
+    name: "Cancel",
+    component: Cancel
   },
   {
     path: "/",

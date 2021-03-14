@@ -13,6 +13,7 @@
        <li><a class="nav-link" href="/">Home</a></li>
        <li><a class="nav-link" href="/#about">About</a></li>
        <li><a class="nav-link" href="/#contact">Contact</a></li>
+        <li><a class="nav-link" href="/#checkout">Checkout</a></li>
        <li><a class="subnav">
           <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
           <div class="subnav-content">
@@ -44,6 +45,7 @@
             <router-link class="sublink" to="/canvas">Canvas</router-link>
           </div>
         </a>
+        <router-link class="topnav-right" to="/checkout">Shop</router-link>
         <a href="/#contact" v-on:click="toggleMenu();" class="btn nav-link">Contact</a>
       </div>
     </div>

@@ -6,7 +6,6 @@
     <Services />
     <Contact />
     <Footer />
-
     <router-view />
   </div>
 </template> 

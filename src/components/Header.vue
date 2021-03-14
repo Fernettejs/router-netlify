@@ -13,6 +13,7 @@
        <li><a class="nav-link" href="#home">Home</a></li>
        <li><a class="nav-link" href="#about">About</a></li>
        <li><a class="nav-link" href="#contact">Contact</a></li>
+       <li><a class="nav-link" href="#checkout">Checkout</a></li>
        <li><a class="subnav">
           <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
           <div class="subnav-content">
@@ -44,6 +45,8 @@
             <router-link class="sublink" to="/canvas">Canvas</router-link>
           </div>
         </a>
+        <router-link class="topnav-right" to="/shop">Shop</router-link>
+        <router-link class="topnav-right" to="/checkout">Checkout</router-link>
         <a href="#contact" v-on:click="toggleMenu();" class="btn nav-link">Contact</a>
       </div>
     </div>
@@ -92,7 +95,7 @@
   margin-left: 80px;
 }
 .topnav-right {
-  margin-right: 80px;
+  margin-right: 10px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -229,6 +232,12 @@ position: absolute;
 right: 30%;
 margin-top: -20px;
 display: block;
+}
+.topnav-centered a {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
 }
 .topnav a {
 font-size: 20px;

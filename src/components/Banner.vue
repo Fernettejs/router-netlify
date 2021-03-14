@@ -75,7 +75,6 @@
 @media (max-width: 991px){
 .banner {
     position: relative;
-    display: table-cell;
     vertical-align: middle;
     padding: 155px 0;
     background-size: cover;
