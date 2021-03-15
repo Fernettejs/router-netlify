@@ -16,7 +16,12 @@
             <div class="content">
                 <div class="social-box" id="youtube-box">
                     <a href="https://www.youtube.com/channel/UCsp7n4jSu-uMAbMqL-QHJ9A" target="_blank">
-                        <img src="../assets/images/youtube-icon.png" alt="">
+                        <img src="../assets/images/icon-youtube.png" alt="">
+                    </a>
+                </div>
+                <div class="social-box" id="facebook-box">
+                    <a href="https://www.facebook.com/DevildogInkandPaint" target="_blank">
+                        <img src="../assets/images/icon-facebook.png" alt="">
                     </a>
                 </div>
                 <div class="social-box" id="ig-box">
