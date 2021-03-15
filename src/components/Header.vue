@@ -13,8 +13,9 @@
        <li><a class="nav-link" href="#home">Home</a></li>
        <li><a class="nav-link" href="#about">About</a></li>
        <li><a class="nav-link" href="#contact">Contact</a></li>
-       <li><a class="nav-link" href="#checkout">Checkout</a></li>
-       <li><a class="subnav">
+        <router-link to="/shop">Shop</router-link>
+        <router-link to="/checkout">Checkout</router-link>       
+        <li><a class="subnav">
           <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
           <div class="subnav-content">
             <router-link to="/airbrush">Airbrush</router-link>
@@ -22,7 +23,8 @@
             <router-link to="/murals">Murals</router-link>
             <router-link to="/canvas">Canvas</router-link>
           </div>
-        </a></li>
+        </a>
+        </li>
      </ul>
 </Sidebar>
 
