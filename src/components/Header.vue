@@ -10,11 +10,14 @@
     </div>
 <Sidebar>
      <ul class="sidebar-panel-nav">
-       <li><a class="nav-link" href="#home">Home</a></li>
-       <li><a class="nav-link" href="#about">About</a></li>
-       <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
         <router-link to="/shop">Shop</router-link>
-        <router-link to="/checkout">Checkout</router-link>       
+        <button class="snipcart-checkout topnav-right cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
+          <span class="snipcart-items-count"></span>
+        </button>
         <li><a class="subnav">
           <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
           <div class="subnav-content">
@@ -34,10 +37,6 @@
       <div class="topnav-left">
         <a class="nav-link" href="#home">Home</a>
         <a class="nav-link" href="#about">About</a>
-      </div>
-
-      <!-- Right-aligned links -->
-      <div class="topnav-right">
         <a class="subnav">
           <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
           <div class="subnav-content">
@@ -47,9 +46,17 @@
             <router-link class="sublink" to="/canvas">Canvas</router-link>
           </div>
         </a>
-        <router-link class="topnav-right" to="/shop">Shop</router-link>
-        <router-link class="topnav-right" to="/checkout">Checkout</router-link>
+      </div>
+
+      <!-- Right-aligned links -->
+      <div class="topnav-right">
+        
         <a href="#contact" v-on:click="toggleMenu();" class="btn nav-link">Contact</a>
+        <router-link class="topnav-right" to="/shop">Shop</router-link>
+        <button class="snipcart-checkout topnav-right cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
+          <span class="snipcart-items-count"></span>
+        </button>
       </div>
     </div>
     <Burger />
@@ -225,14 +232,17 @@
    padding-bottom: 0.5em;
  }
 
+.cart {
+  margin-top: 30px;
+  margin-left: 10px;
+}
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 
 @media (max-width: 991px){
 .topnav-centered {
 float: none;
 position: absolute;
-right: 30%;
-margin-top: -20px;
+margin-top: -16px;
 display: block;
 }
 .topnav-centered a {
@@ -242,7 +252,7 @@ display: block;
   transform: none;
 }
 .topnav a {
-font-size: 20px;
+font-size: 1.5rem;
 }
 
 .subnav:hover a {
@@ -250,7 +260,7 @@ font-size: 20px;
   width: 160px;
 }
 .subnavbtn {
-  font-size: 20px
+  font-size: 1.5rem
 }
 .menu{
   position: fixed;

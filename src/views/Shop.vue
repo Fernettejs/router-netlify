@@ -1,25 +1,35 @@
 <template>
 <div>
   <HeaderAway />
-  <img src="../assets/images/white-t-shirt.png" alt="Cool Shirt">
-  <button class="snipcart-add-item"
-  data-item-id="shirt"
-  data-item-price="24.99"
-  data-item-url="src/views/Shop.vue"
-  data-item-description="High-quality shirt."
-  data-item-image="../assets/images/white-t-shirt.png"
-  data-item-name="Cool Shirt">
-  Add to cart
-</button>
+  <div class="grid-container">
+    <img class="grid-item" src="../assets/images/white-t-shirt.png" alt="Cool Shirt">
+    <div class="grid-item"></div>
+    <img class="grid-item" src="../assets/images/hat.png" alt="Cool Hat">
+    <h2>Cool Shirt</h2>
+    <div class="grid-item"></div>
+    <h2>Cool Hat</h2>
+
+      
 <button class="snipcart-add-item"
-  data-item-id="hat"
-  data-item-price="14.99"
-  data-item-url="src/views/Shop.vue"
-  data-item-description="High-quality hat."
-  data-item-image="../assets/images/murals/afghan.png"
-  data-item-name="Cool Hat">
-  Add to cart
-</button>
+        data-item-id="shirt"
+        data-item-price="24.99"
+        data-item-url="src/views/Shop.vue"
+        data-item-description="High-quality shirt."
+        data-item-image="src/assets/images/white-t-shirt.png"
+        data-item-name="Cool Shirt">
+        Add to cart
+    </button>      
+    <div class="grid-item"></div>
+<button class="snipcart-add-item"
+    data-item-id="hat"
+    data-item-price="14.99"
+    data-item-url="src/views/Shop.vue"
+    data-item-description="High-quality hat."
+    data-item-image="src/assets/images/murals/afghan.png"
+    data-item-name="Cool Hat">
+    Add to cart
+  </button>
+</div>
   <Footer />
 </div>
 </template>
@@ -67,8 +77,21 @@ export default {
   </script>
 
   <style scoped>
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: var(--blue-color);
+  padding: 20px;
+}
+.grid-item {
+  background-color: rgba(0, 0, 0, .0);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 30%;
+}
   button {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../assets/images/American-flag-2a.png);
+    background: var(--primary-color);
     position: relative;
     display: inline-block;
     color: #fff;
