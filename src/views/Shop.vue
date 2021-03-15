@@ -77,6 +77,10 @@ export default {
   </script>
 
   <style scoped>
+  .body{
+    width: 100vw;
+    overflow: hidden;
+  }
 .header {
     text-align: center;
 }
@@ -89,17 +93,17 @@ h1 {
 }
 .content {
   background-color: var(--blue-color);
-  padding: 200px;
   display: flex;
+  padding-top: 100px;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
 .product-box {
   background-color: rgba(0, 0, 0, .0);
-  padding: 0 200px;
   text-align: center;
   height: 500px;
+  overflow: hidden;
 }
 button {
   background: var(--primary-color);
@@ -120,7 +124,6 @@ button {
 img {
   height: 200px;
   margin: 10px;
-
 }
 h2 {
   margin: 20px;
