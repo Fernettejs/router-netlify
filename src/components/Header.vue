@@ -13,8 +13,8 @@
         <li><a class="navlink" href="#home">Home</a></li>
         <li><a class="navlink" href="#about">About</a></li>
         <li><a class="navlink" href="#contact">Contact</a></li>
-        <router-link to="/shop">Shop</router-link>
-        <button class="snipcart-checkout topnav-right cart">
+        <router-link to="/shop" class="navlink">Shop</router-link>
+        <button class="snipcart-checkout topnav-right mobile-cart">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
           <span class="snipcart-items-count"></span>
         </button>
@@ -51,7 +51,7 @@
       <!-- Right-aligned links -->
       <div class="nav topnav-right">
         <a href="/#contact" v-on:click="toggleMenu();" class="btn navlink">Contact</a>
-        <router-link class="navlink topnav-right" to="/shop">Shop</router-link>
+        <router-link class="navlink topnav-right cart" to="/shop">Shop</router-link>
         <button class="snipcart-checkout topnav-right cart">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
           <span class="snipcart-items-count"></span>
@@ -113,6 +113,7 @@
   padding: 8px 16px 4px 16px;
   text-decoration: none;
   margin-top: 18px;
+  font-weight: 700px;
 }
 
 /* Change the color of links on hover */
@@ -235,15 +236,22 @@
 .cart {
   margin-top: 30px;
   margin-left: 10px;
+  padding: 0 10px;
+
+}
+.mobile-cart {
+  padding: 0 20px;
+  margin-top: 30px;
+  margin-left: 60px;
 }
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 
 @media (max-width: 991px){
 .topnav-centered {
-float: none;
-position: absolute;
-margin-top: -16px;
-display: block;
+  float: none;
+  position: absolute;
+  margin-top: -16px;
+  display: block;
 }
 .topnav-centered a {
   position: relative;
@@ -252,7 +260,7 @@ display: block;
   transform: none;
 }
 .topnav a {
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .subnav:hover a {
@@ -311,6 +319,9 @@ header .toggle{
 }
 header.sticky .toggle{
   filter: invert(0)
+}
+.topnav a {
+  padding: 0 20px;
 }
 }
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */

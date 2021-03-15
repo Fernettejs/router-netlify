@@ -1,32 +1,34 @@
 <template>
 <div class="body">
     <HeaderAway />
-    <div class="grid-container">
-      <img class="grid-item" src="../assets/images/white-t-shirt.png" alt="Cool Shirt">
-      <div class="grid-item"></div>
-      <img class="grid-item" src="../assets/images/hat.png" alt="Cool Hat">
+  <div class="header">
+    <h1>The Shop</h1>
+  </div>
+  <div class="content">
+    <div class="product-box">
+      <img src="../assets/images/white-t-shirt.png" alt="Cool Shirt">
       <h2>Cool Shirt</h2>
-      <div class="grid-item"></div>
+      <button class="snipcart-add-item"
+        data-item-id="shirt"
+        data-item-price="24.99"
+        data-item-url="/"
+        data-item-description="This is where you talk about how sweet and high-quality this shirt is."
+        data-item-name="Cool Shirt">
+        Add to cart
+      </button>
+    </div>
+    <div class="product-box">
+      <img src="../assets/images/hat.png" alt="Cool Hat">
       <h2>Cool Hat</h2>
-
-        
-  <button class="snipcart-add-item"
-          data-item-id="shirt"
-          data-item-price="24.99"
-          data-item-url="/"
-          data-item-description="This is where you talk about how sweet and high-quality this shirt is."
-          data-item-name="Cool Shirt">
-          Add to cart
-      </button>      
-      <div class="grid-item"></div>
-  <button class="snipcart-add-item"
-      data-item-id="hat"
-      data-item-price="14.99"
-      data-item-url="/"
-      data-item-description="This is where you talk about how sweet and high-quality this hat is."
-      data-item-name="Cool Hat">
-      Add to cart
-    </button>
+      <button class="snipcart-add-item"
+        data-item-id="hat"
+        data-item-price="14.99"
+        data-item-url="/"
+        data-item-description="This is where you talk about how sweet and high-quality this hat is."
+        data-item-name="Cool Hat">
+        Add to cart
+      </button>
+    </div>  
 </div>
   <Footer />
 </div>
@@ -75,39 +77,57 @@ export default {
   </script>
 
   <style scoped>
-  .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
+.header {
+    text-align: center;
+}
+h1 {
+  color: #fff;
+  font-size: 3em;
+  text-transform: uppercase;
+  -webkit-text-stroke: .2px rgb(51, 51, 51);
+  background: var(--primary-color);
+}
+.content {
   background-color: var(--blue-color);
   padding: 200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-.grid-item {
+.product-box {
   background-color: rgba(0, 0, 0, .0);
-  padding: 20px;
-  font-size: 30px;
+  padding: 0 200px;
   text-align: center;
-  margin-left: 30%;
+  height: 500px;
 }
-  button {
-    background: var(--primary-color);
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    margin-top: 40px;
-    padding: 10px 25px;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 5px solid white;
-    box-shadow: -6px 6px 25px #888888;
-    left: 0;
-  }
+button {
+  background: var(--primary-color);
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 5px solid white;
+  box-shadow: -6px 6px 25px #888888;
+}
+img {
+  height: 200px;
+  margin: 10px;
+
+}
+h2 {
+  margin: 20px;
+}
+@media screen and (max-width: 600px) {
   img {
     width: 200px;
-    display: block;
-    }
+}
+}
   </style>
