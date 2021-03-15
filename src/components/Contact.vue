@@ -44,6 +44,7 @@
 .content{
     display: flex;
     justify-content: space-between;
+    padding-left: 200px;
 }
 .contact{
     background: var(--blue-color);
@@ -139,7 +140,9 @@ p {
     font-size: 18px;
     overflow-wrap: break-word;
     word-break: break-all;
-
+}
+.content{
+    padding: 40px;
 }
 }
 

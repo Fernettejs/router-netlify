@@ -1,34 +1,32 @@
 <template>
-<div>
-  <HeaderAway />
-  <div class="grid-container">
-    <img class="grid-item" src="../assets/images/white-t-shirt.png" alt="Cool Shirt">
-    <div class="grid-item"></div>
-    <img class="grid-item" src="../assets/images/hat.png" alt="Cool Hat">
-    <h2>Cool Shirt</h2>
-    <div class="grid-item"></div>
-    <h2>Cool Hat</h2>
+<div class="body">
+    <HeaderAway />
+    <div class="grid-container">
+      <img class="grid-item" src="../assets/images/white-t-shirt.png" alt="Cool Shirt">
+      <div class="grid-item"></div>
+      <img class="grid-item" src="../assets/images/hat.png" alt="Cool Hat">
+      <h2>Cool Shirt</h2>
+      <div class="grid-item"></div>
+      <h2>Cool Hat</h2>
 
-      
-<button class="snipcart-add-item"
-        data-item-id="shirt"
-        data-item-price="24.99"
-        data-item-url="src/views/Shop.vue"
-        data-item-description="High-quality shirt."
-        data-item-image="src/assets/images/white-t-shirt.png"
-        data-item-name="Cool Shirt">
-        Add to cart
-    </button>      
-    <div class="grid-item"></div>
-<button class="snipcart-add-item"
-    data-item-id="hat"
-    data-item-price="14.99"
-    data-item-url="src/views/Shop.vue"
-    data-item-description="High-quality hat."
-    data-item-image="src/assets/images/murals/afghan.png"
-    data-item-name="Cool Hat">
-    Add to cart
-  </button>
+        
+  <button class="snipcart-add-item"
+          data-item-id="shirt"
+          data-item-price="24.99"
+          data-item-url="/"
+          data-item-description="This is where you talk about how sweet and high-quality this shirt is."
+          data-item-name="Cool Shirt">
+          Add to cart
+      </button>      
+      <div class="grid-item"></div>
+  <button class="snipcart-add-item"
+      data-item-id="hat"
+      data-item-price="14.99"
+      data-item-url="/"
+      data-item-description="This is where you talk about how sweet and high-quality this hat is."
+      data-item-name="Cool Hat">
+      Add to cart
+    </button>
 </div>
   <Footer />
 </div>
@@ -81,7 +79,7 @@ export default {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: var(--blue-color);
-  padding: 20px;
+  padding: 200px;
 }
 .grid-item {
   background-color: rgba(0, 0, 0, .0);

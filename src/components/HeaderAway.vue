@@ -10,9 +10,9 @@
     </div>
 <Sidebar>
      <ul class="sidebar-panel-nav">
-        <li><a class="nav-link" href="/">Home</a></li>
-        <li><a class="nav-link" href="/#about">About</a></li>
-        <li><a class="nav-link" href="/#contact">Contact</a></li>
+        <li><a class="navlink" href="/">Home</a></li>
+        <li><a class="navlink" href="/#about">About</a></li>
+        <li><a class="navlink" href="/#contact">Contact</a></li>
         <router-link to="/shop">Shop</router-link>
         <button class="snipcart-checkout topnav-right cart">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
@@ -34,8 +34,8 @@
 
       <!-- Left-aligned links (default) -->
       <div class="topnav-left">
-        <a class="nav-link" href="/">Home</a>
-        <a class="nav-link" href="/#about">About</a>
+        <a class="navlink" href="/">Home</a>
+        <a class="navlink" href="/#about">About</a>
         <a class="subnav">
           <button href="#services" class="subnavbtn navlink">Portfolio<i class="fa fa-caret-down"></i></button>
           <div class="subnav-content">
@@ -49,8 +49,8 @@
 
       <!-- Right-aligned links -->
       <div class="topnav-right">
-        <a href="/#contact" v-on:click="toggleMenu();" class="btn nav-link">Contact</a>
-        <router-link class="topnav-right" to="/shop">Shop</router-link>
+        <a href="/#contact" v-on:click="toggleMenu();" class="btn navlink">Contact</a>
+        <router-link class="navlink topnav-right" to="/shop">Shop</router-link>
         <button class="snipcart-checkout topnav-right cart">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
           <span class="snipcart-items-count"></span>
@@ -109,7 +109,7 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 10px 16px;
+  padding: 8px 16px 4px 16px;
   text-decoration: none;
   margin-top: 18px;
 }
@@ -229,7 +229,9 @@
    display: block;
    padding-bottom: 0.5em;
  }
-
+.navlink {
+  font-weight: 700;
+}
 .cart {
   margin-top: 30px;
   margin-left: 10px;

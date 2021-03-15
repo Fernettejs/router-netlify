@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="copyright">
-        <p>Copyright @2021 Fernette Marketing. All Rights Reserved.</p>
+        <p>Copyright @2021 DevilDog Ink and Paint llc. All Rights Reserved.</p>
         </div>
     </section>
 </template>
